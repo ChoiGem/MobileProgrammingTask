@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/memo" android:title="📑    메모"
+        />
+        <!--android:icon="@drawable/notepad"-->
+<item android:id="@+id/toDo" android:title="📅    할 일"
+        />
+        <!--android:icon="@drawable/calendar"-->
+    <item android:id="@+id/draw_finish" android:title="❌    종료"
+        />
+        <!--android:icon="@android:drawable/ic_menu_close_clear_cancel"-->
+</menu>

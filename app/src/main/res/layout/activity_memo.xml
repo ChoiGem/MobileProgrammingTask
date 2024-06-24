@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/listView"
+            android:layout_weight="1"
+            android:dividerHeight="10dp"/>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/extended_action_bar"
+            android:layout_gravity="right"
+            android:text="ADD MEMO"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_input_add"
+            android:layout_margin="15dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/main_drawer_view"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_navigation"
+        app:itemTextAppearance="@style/NavigationViewText"
+        app:itemIconSize="25dp"/>
+</androidx.drawerlayout.widget.DrawerLayout>
